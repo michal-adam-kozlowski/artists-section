@@ -1,0 +1,97 @@
+
+.single-artist-wrapper {
+  position: relative;
+  font-family: 'Oswald', sans-serif;
+  width: 25%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.single-artist-name {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: #faa519;
+  margin-top: 58px;
+}
+
+.single-artist-img-wrapper {
+  position: relative;
+  border-radius: 25px;
+  width: 200px;
+  height: 200px;
+
+  &:hover:after {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: -48px;
+    left: calc(50% - 48px);
+    content: url("./img/play-button (1).png");
+    margin: auto;
+    width: 96px;
+    height: 96px;
+    background: #ffffff;
+    border-radius: 50%;
+  }
+}
+
+.single-artist-href {
+  overflow: hidden;
+  display: block;
+  border-radius: 25px;
+  width: 200px;
+  height: 200px;
+}
+
+.single-artist-img {
+  max-width: 100%;
+  transition: all 0.3s;
+  display: block;
+  width: 200px;
+  height: 200px;
+  transform: scale(1);
+}
+
+.single-artist-img:hover {
+  transform: scale(1.2);
+  //-webkit-filter: brightness(0.5);
+
+}
+
+.single-artist-description {
+  position: absolute;
+  bottom: 210px;
+  color: #ffffff;
+  font-weight: 300;
+  margin-top: 20px;
+  width: 200px;
+  border-radius: 10px;
+  background:#faa519;
+  padding: 5px;
+  box-sizing: border-box;
+  font-size: 1.5rem;
+
+}
+
+.single-artist-description:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  bottom: -10px;
+  left: calc(50% - 10px);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #faa519;
+  z-index: 1;
+
+}
+
+
+
+
