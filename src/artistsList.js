@@ -34,7 +34,6 @@ class ArtistsList extends Component {
     render() {
         return (
             <div className="workspace">
-                <div style={{height: "200px"}}>pałałan</div>
             <div className="artists-wrapper">
                     {artistsArr.map((el) =>
                         <Artist name={el.name} description={el.description} video={el.video} photo={el.photo}/>
