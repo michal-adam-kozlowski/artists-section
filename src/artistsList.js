@@ -4,28 +4,28 @@ import "./artistsList.scss";
 
 var artistsArr = [
         {
-            name: "Eminem",
-            description: "Jeden z najbardziej popularnych raperów w USA. W karierze pomogło mu bycie białym, co sprawiało, że był lepiej widoczny na wystepach",
-            video: "https://www.youtube.com/embed/YVkUvmDQ3HY",
-            photo: "./img/eminem.png"
+            name: "Łąki Łan",
+            description: "Nietuzinkowe połącznie funku, rocka i elektro, okraszone łąkowym outfitem i energią peterdy na scenie.",
+            video: "https://www.youtube.com/embed/vIOxazUZVXE",
+            photo: "./img/artysta-01.png"
         },
         {
-            name: "Rihanna",
-            description: "Urodzona altruistka, zawsze gotowa wziąć kogoś pod swoją parasolkę",
-            video: "https://www.youtube.com/embed/sEhy-RXkNo0",
-            photo: "./img/rihanna.png"
+            name: "Już wkrótce",
+            description: "Wraz ze zbliżaniem się terminu festiwalu będziemy ogłaszać kolejnych artystów",
+            video: "https://www.youtube.com/embed/YsTfydKBOXU",
+            photo: "./img/artysta-02.png"
         },
         {
-            name: "U2",
-            description: "Bezpieczny wybór na imprezę. Jak ich słuchasz to pewnie lubisz pracę w młodym dynamicznym zespole, podróże i sport. Możesz powiedzieć o nich zarówno mamie jak i koledze z pracy. Taki schabowy z ziemniaczkami i mizerią w muzyce",
-            video: "https://www.youtube.com/embed/XC3ahd6Di3M",
-            photo: "./img/u2.png"
+            name: "Już wkrótce",
+            description: "Wraz ze zbliżaniem się terminu festiwalu będziemy ogłaszać kolejnych artystów",
+            video: "https://www.youtube.com/embed/YsTfydKBOXU",
+            photo: "./img/artysta-03.png"
         },
         {
-            name: "Zenek Martyniuk",
-            description: "Gwiazda przez duże G! Autor przebojów znanych w całym kraju, jak również dzięki polonii poza jego granicami. Obowiązkowo puść w samochodzie jak wieziesz Karynę na wixę w dyskotece pod Grójcem.",
-            video: "https://www.youtube.com/embed/cxtnot8lY4U",
-            photo: "./img/zenek.png"
+            name: "Już wkrótce",
+            description: "Wraz ze zbliżaniem się terminu festiwalu będziemy ogłaszać kolejnych artystów",
+            video: "https://www.youtube.com/embed/YsTfydKBOXU",
+            photo: "./img/artysta-04.png"
         }
     ];
 
@@ -34,6 +34,7 @@ class ArtistsList extends Component {
     render() {
         return (
             <div className="workspace">
+                <div style={{height: "200px"}}>pałałan</div>
             <div className="artists-wrapper">
                     {artistsArr.map((el) =>
                         <Artist name={el.name} description={el.description} video={el.video} photo={el.photo}/>
